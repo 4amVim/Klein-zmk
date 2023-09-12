@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/outputs.h>
 
 #define _ &none
-#define -- &trans
+#define ___ &trans
 
 #define BASE 0
 #define NAV  1
@@ -33,7 +33,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-//          ------------------------------------------------------------------------------------------------------------
+//          __________________________________________________________________________________________________________________________________________________________________
 //          |  Q  |  W  |  E   |  R   |  T   |                                           |  Y   |  U    |  I    |  O   |   P   |
 //          |  A  |  S  |  D   |  F   |  G   |                                           |  H   |  J    |  K    |  L   |   '   |
 //          |  Z  |  X  |  C   |  V   |  B   |                                           |  N   |  M    |  ,    |  .   |   /   |
@@ -51,10 +51,10 @@
         nav_layer {
 
             bindings = <
---             --             --             --             --                                                               &kp CAPSLOCK   &bt BT_CLR     &kp K_CUT      &kp K_COPY     &kp K_PASTE
-&kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT      --                                                               &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &trans
---             --             --             --             --                                                               &kp INSERT     &kp HOME       &kp PG_UP      &kp PG_DN      &kp END
-                                             --             --             --                   _  _          &kp RET        &kp BKSP       &kp DEL
+___             ___             ___             ___             ___                                                               &kp CAPSLOCK   &bt BT_CLR     &kp K_CUT      &kp K_COPY     &kp K_PASTE
+&kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT      ___                                                               &kp LEFT       &kp DOWN       &kp UP         &kp RIGHT      &trans
+___             ___             ___             ___             ___                                                               &kp INSERT     &kp HOME       &kp PG_UP      &kp PG_DN      &kp END
+                                             ___             ___             ___                   _  _          &kp RET        &kp BKSP       &kp DEL
             >;
         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
@@ -62,11 +62,11 @@
         num_layer {
             
             bindings = <
-&kp LBKT       &kp N7         &kp N8         &kp N9         &kp RBKT                                                         --         --             --             --             --
-&kp SEMI       &kp N4         &kp N5         &kp N6         &kp EQUAL                                                        --         &kp LSHFT      &kp LCTRL      &kp LALT       &kp LGUI
-&kp GRAVE      &kp N1         &kp N2         &kp N3         &kp BSLH                                                         --         --             --             --             --        
---             --             --             --             --                                                               &kp INSERT &kp HOME       &kp PG_UP      &kp PG_DN      &kp END
-                                             &kp PERIOD     &kp N0         &kp MINUS            _  _          --             --         --
+&kp LBKT       &kp N7         &kp N8         &kp N9         &kp RBKT                                                         ___         ___             ___             ___             ___
+&kp SEMI       &kp N4         &kp N5         &kp N6         &kp EQUAL                                                        ___         &kp LSHFT      &kp LCTRL      &kp LALT       &kp LGUI
+&kp GRAVE      &kp N1         &kp N2         &kp N3         &kp BSLH                                                         ___         ___             ___             ___             ___        
+___             ___             ___             ___             ___                                                               &kp INSERT &kp HOME       &kp PG_UP      &kp PG_DN      &kp END
+                                             &kp PERIOD     &kp N0         &kp MINUS            _  _          ___             ___         ___
             >;
         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
@@ -74,10 +74,10 @@
         fun_layer {
             
             bindings = <
-&kp F12        &kp F7         &kp F8         &kp F9         &kp PSCRN                                                             --             --             --             --             --
-&kp F11        &kp F4         &kp F5         &kp F6         &kp SYSREQ                                                            --             &kp LSHFT      &kp LCTRL      &kp LALT       &kp LGUI
-&kp F10        &kp F1         &kp F2         &kp F3         &kp PAUSE_BREAK                                                       --             --             --             --             --
-                                             &kp ESC        &kp SPACE           &kp TAB              _  _          --             --             --
+&kp F12        &kp F7         &kp F8         &kp F9         &kp PSCRN                                                             ___             ___             ___             ___             ___
+&kp F11        &kp F4         &kp F5         &kp F6         &kp SYSREQ                                                            ___             &kp LSHFT      &kp LCTRL      &kp LALT       &kp LGUI
+&kp F10        &kp F1         &kp F2         &kp F3         &kp PAUSE_BREAK                                                       ___             ___             ___             ___             ___
+                                             &kp ESC        &kp SPACE           &kp TAB              _  _          ___             ___             ___
             >;
         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
@@ -85,10 +85,10 @@
         sym_layer {
             
             bindings = <
-&kp LS(LBKT)   &kp LS(N7)     &kp LS(N8)     &kp LS(N9)     &kp LS(RBKT)         --                                                        --             --             --             --
-&kp LS(SEMI)   &kp LS(N4)     &kp LS(N5)     &kp LS(N6)     &kp LS(EQUAL)        --                                                        &kp LSHFT      &kp LCTRL      &kp LALT       &kp LGUI
-&kp LS(GRAVE)  &kp LS(N1)     &kp LS(N2)     &kp LS(N3)     &kp LS(BSLH)         --                                                        --             --             --             --
-                                                            &kp LS(PERIOD) &kp LS(N0)           &kp LS(MINUS)  _  _         --             --             --
+&kp LS(LBKT)   &kp LS(N7)     &kp LS(N8)     &kp LS(N9)     &kp LS(RBKT)         ___                                                        ___             ___             ___             ___
+&kp LS(SEMI)   &kp LS(N4)     &kp LS(N5)     &kp LS(N6)     &kp LS(EQUAL)        ___                                                        &kp LSHFT      &kp LCTRL      &kp LALT       &kp LGUI
+&kp LS(GRAVE)  &kp LS(N1)     &kp LS(N2)     &kp LS(N3)     &kp LS(BSLH)         ___                                                        ___             ___             ___             ___
+                                                            &kp LS(PERIOD) &kp LS(N0)           &kp LS(MINUS)  _  _         ___             ___             ___
             >;
         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
@@ -96,10 +96,10 @@
         media_layer {
             
             bindings = <
---             --             --             --             --                                  --             --             --             --             --
-&kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT      --                                  &kp K_PREV     &kp K_VOL_DN   &kp K_VOL_UP   &kp K_NEXT     --
---             --             --             --             --                                  --             --             --             --             --
-                                             --             --             --         _  _      &kp K_STOP2    &kp K_PP       &kp K_MUTE
+___             ___             ___             ___             ___                                  ___             ___             ___             ___             ___
+&kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT      ___                                  &kp K_PREV     &kp K_VOL_DN   &kp K_VOL_UP   &kp K_NEXT     ___
+___             ___             ___             ___             ___                                  ___             ___             ___             ___             ___
+                                             ___             ___             ___         _  _      &kp K_STOP2    &kp K_PP       &kp K_MUTE
             >;
         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
@@ -107,10 +107,10 @@
         blu_layer {
             
             bindings = <
-&bootloader    --             --             --             &bt BT_CLR                           &bt BT_CLR     --             --             --             &bootloader
-&trans         &trans         &trans         &trans         &trans                               --             --             --             --             --
+&bootloader    ___             ___             ___             &bt BT_CLR                           &bt BT_CLR     ___             ___             ___             &bootloader
+&trans         &trans         &trans         &trans         &trans                               ___             ___             ___             ___             ___
 &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                         &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
-                                             --             &bt BT_CLR     --        _  _        --             --             &bt BT_CLR
+                                             ___             &bt BT_CLR     ___        _  _        ___             ___             &bt BT_CLR
             >;
         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
