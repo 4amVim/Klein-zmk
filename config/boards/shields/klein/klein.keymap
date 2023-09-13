@@ -18,8 +18,7 @@
 #define SYM  2
 #define NUML 3
 #define NUMR 4
-#define FUN  5
-#define BLU  6
+#define BLU  5
 
 &mt {
    tapping-term-ms = <200>;
@@ -36,13 +35,13 @@
 &kp Q          &kp W          &kp E          &kp R          &kp T                                                              &kp Y          &kp U          &kp I          &kp O          &kp P
 &mt LALT A     &mt LGUI S     &mt LCTRL D    &lt SYM F      &kp G                                                              &kp H          &lt SYM J      &mt RCTRL K    &mt RGUI L     &mt RALT SQT
 &lt BLU Z      &kp X          &kp C          &kp V          &kp B                                                              &kp N          &kp M          &kp COMMA      &kp DOT        &lt BLU FSLH
-                                             &lt NUMR ESC   &lt NAV TAB    &kp LSHIFT BSPC    _ _    &kp RSHIFT SPACE          &lt FUN RET    &lt NUML DEL
+                                             &lt NUMR ESC   &lt NAV TAB    &kp LSHIFT BSPC    _ _    &kp RSHIFT SPACE          &kp RET    &lt NUML DEL
             >;
 sensor-bindings = <&inc_dec_kp PG_UP PG_DN &inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
 
-sym_layer {
+        sym_layer {
             bindings = <
 &kp EXCL       &kp AT         &kp HASH       &kp DLLR       &kp PERCENT                                          &kp CARET      &kp STAR       &kp AMPS       &kp MINUS      &kp KP_PLUS
 &kp EQUAL      &kp LBKT       &kp RBKT       &kp LS(ENTER)  &kp UNDER                                            &kp LPAR       &kp LG(SPACE)  &kp RPAR       &kp LBRC       &kp RBRC
@@ -84,18 +83,6 @@ ___            ___            ___            &kp DEL        &kp RET             
             >;
 sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
-
-
-        fun_layer { 
-            bindings = <
-&kp F12        &kp F7         &kp F8         &kp F9         &kp PSCRN                                            ___            ___            ___            ___            ___
-&kp F11        &kp F4         &kp F5         &kp F6         &kp SYSREQ                                           ___            &kp LSHFT      &kp LCTRL      &kp LALT       &kp LGUI
-&kp F10        &kp F1         &kp F2         &kp F3         &kp PAUSE_BREAK                                      ___            ___            ___            ___            ___
-                                             &kp ESC        &kp SPACE      &kp TAB         _ _    ___            ___            ___
-            >;
-sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
-        };
-
 
         blu_layer {          
             bindings = <
