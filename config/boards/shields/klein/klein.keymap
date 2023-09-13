@@ -47,7 +47,7 @@ sym_layer {
 &kp EXCL       &kp AT         &kp HASH       &kp DLLR       &kp PERCENT                                          &kp CARET      &kp STAR       &kp AMPS       &kp MINUS      &kp KP_PLUS
 &kp EQUAL      &kp LBKT       &kp RBKT       &kp LS(ENTER)  &kp UNDER                                            &kp LPAR       &kp LG(SPACE)  &kp RPAR       &kp LBRC       &kp RBRC
 ___            ___            &kp LEFT       &kp RIGHT      ___                                                  ___            &kp UP         &kp DOWN       ___            ___
-                                             ___            ___            ___             _ _    ___            ___            ____
+                                             ___            ___            ___             _ _    ___            ___            ___
             >;
 sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
